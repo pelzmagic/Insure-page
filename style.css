@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS VARIABLES */
+
+:root {
+  --DARK-VIOLET: hsl(256, 26%, 20%);
+  --GRAYISH-BLUE: hsl(216, 30%, 68%);
+  --VERY-DARK-VIOLET: hsl(270, 9%, 17%);
+  --DARK-GRAYISH-VIOLET: hsl(273, 4%, 51%);
+  --VERY-LIGHT-GRAY: hsl(0, 0%, 98%);
+}
+
+/* GENERAL STYLING */
+body {
+  background-color: var(--VERY-LIGHT-GRAY);
+  font-size: 16px;
+}
+header {
+  border: 1px solid red;
+  width: 100%;
+  height: 4rem;
+  padding-top: 1rem;
+}
+.head {
+  border: 1px solid blue;
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  /* top: 50%; */
+}
+.nav_items {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+nav {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--GRAYISH-BLUE);
+}
+/* .nav_list {
+  text-decoration: none;
+} */
+.nav_button {
+  padding: 0.6rem;
+  /* position: absolute;
+  top: 1%;
+  right: 6%; */
+  font-family: "DM Serif Display", serif;
+  border: 1px solid black;
+  background-color: var(--VERY-LIGHT-GRAY);
+}
+.hero {
+  background-color: var(--DARK-VIOLET);
+  padding-top: 4rem;
+}
+.hero_left_content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 7.5%;
+  height: 440px;
+}
+hr {
+  border: 1px solid var(--DARK-GRAYISH-VIOLET);
+  width: 5rem;
+}
+h1 {
+  color: var(--VERY-LIGHT-GRAY);
+  font-family: "Karla", system-ui;
+  font-weight: 700;
+  font-size: 3.5rem;
+  border: 1px solid blue;
+  width: 21%;
+}
+.details {
+  border: 1px solid red;
+  color: var(--VERY-LIGHT-GRAY);
+  font-family: "Karla", system-ui;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 27.5%;
+}
+.hero_button {
+  width: 5.9%;
+}
+.plans {
+  padding: 0.6rem 1.2rem;
+  font-family: "Karla", system-ui;
+  color: var(--VERY-LIGHT-GRAY);
+  background-color: var(--DARK-VIOLET);
+  border: 1px solid var(--VERY-LIGHT-GRAY);
+}
